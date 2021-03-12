@@ -23,7 +23,7 @@ ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR rvs]:
 ItemDisplay[gps OR ops OR gpm OR opm OR gpl OR opl]:
 ItemDisplay[key OR vps OR yps OR wms OR tsc OR isc]:
 ItemDisplay[hp5]: Heal
-ItemDisplay[mp5]:	Mana
+ItemDisplay[mp5]: Mana
 ItemDisplay[rvl]: Full
 
 // =============================================================
@@ -116,15 +116,15 @@ ItemDisplay[SET (7wd OR 7qr OR oba) !ID]:  %NL%%RED%o  %GREEN%%NAME%  %RED%o%NL%
 
 // RUNEWORD BASES
 // 4os GMB+3 skill
-ItemDisplay[amc NMAG SOCK=4 TABSK0=3]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[amc NMAG SOCK=4 TABSK0=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 4os+ eth thresher/giant thresher/cryptic axe/mancatcher
-ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 5os+ zerker non eth
-ItemDisplay[7wa NMAG SOCK>4 !ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[7wa NMAG SOCK>4 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 5os+ eth zerker, col blade, col sword
-ItemDisplay[(7wa OR 7gd OR 7fb) NMAG SOCK>4 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+ItemDisplay[(7wa OR 7gd OR 7fb) NMAG SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 3os gtalon +2-3 light sentry
-ItemDisplay[9tw NMAG SOCK=3 SK271>1]: %NL%  %DARK_GREEN%%NAME% %RED%+Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[9tw NMAG SOCK=3 SK271>1 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
 ItemDisplay[WEAPON (MAG OR RARE OR UNI OR SET) !ID]:
@@ -156,11 +156,11 @@ ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL%%RED%o  %GREEN%%NAME%  %RED
 
 // RUNEWORD BASES
 // 3os+ superior mage, dusk, archon
-ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 !ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 3os+ eth elite armors (treachery, stone, duress)
-ItemDisplay[NMAG ELT EQ2 SOCK>2 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+ItemDisplay[NMAG ELT EQ2 SOCK>2 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 // 4os eth sacred targe, vortex shield (exile)
-ItemDisplay[NMAG (pab OR paf) SOCK=4 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+ItemDisplay[NMAG (pab OR paf) SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 
 // RARES >ilvl79
 // pelts, barb helms, gloves, boots, belts, circs
