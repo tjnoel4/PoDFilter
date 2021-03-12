@@ -22,6 +22,7 @@ Written because I was getting tired of seeing things like Cleglaw's notified in 
 - Gold above 6k
 - Throwing Knives/Wands for 35k
 - Wirt's Leg
+- Horadric Cube
 - Full HP/MP/Rejuv
 - Flawless Skulls and all Perfect Gems
 - All essences, keys, uber organs
