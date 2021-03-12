@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.10
+// v0.11
 // Last updated: March 11 2021
 // reach me at discord: synpoo#7377
 //
@@ -18,7 +18,7 @@
 //
 // Hidden: All potions except supers and full rejuv, keys, scrolls
 // =============================================================
-ItemDisplay[GOLD<6000]:
+ItemDisplay[GOLD<5000]:
 ItemDisplay[leg]: %NAME%
 ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR rvs]:
 ItemDisplay[gps OR ops OR gpm OR opm OR gpl OR opl]:
@@ -52,18 +52,18 @@ ItemDisplay[pk3]: %GRAY%  Key%ORANGE% (Izual)  %NOTIFY-ORANGE%
 ItemDisplay[dhn OR bey OR mbr]: %ORANGE%  %NAME%  %NOTIFY-ORANGE%
 
 // PoD Items
-ItemDisplay[cx5]: %RED%%NL%  %NAME%  %NL%%NOTIFY-RED%
+ItemDisplay[cx5]: %NL% %PURPLE%+ %NAME% + %NL%%NOTIFY-PURPLE%
 ItemDisplay[cx7]: %NAME%%NOTIFY-ORANGE%
 ItemDisplay[maz]: %RED%%NAME%%NOTIFY-RED%
-ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10) !ID]: %NL%  %NAME%  %NOTIFY-ORANGE%%NL%
+ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10) !ID]: %NL% + %NAME% + %NOTIFY-ORANGE%%NL%
 
 // =============================================================
 // RUNES, JEWELS, CHARMS
 //
 // Hidden: Runes below Lem
 // =============================================================
-ItemDisplay[RUNE>25]: %NL%        %NAME%        %NL%%NOTIFY-ORANGE%
-ItemDisplay[RUNE>19 AND RUNE<26]: %NL%   %NAME%   %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE>25]: %NL% +       %NAME%       + %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE>19 AND RUNE<26]: %NL% +  %NAME%  + %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
@@ -72,9 +72,9 @@ ItemDisplay[cm1 OR cm2 OR cm3 (!ID UNI)]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
 ItemDisplay[(cm1 OR cm2 OR cm3) !ID]:
 
 // Hidden: Unid Jewels <ilvl 45
-ItemDisplay[jew MAG !ID]: %NAME% [i%ILVL%]%NOTIFY-BLUE%
+ItemDisplay[jew MAG !ID]: %NAME% [i%ILVL%]
 ItemDisplay[jew RARE !ID]: %NL%  %NAME% [i%ILVL%]  %NL%%NOTIFY-YELLOW%
-ItemDisplay[jew UNI]: %NL%    %NAME%    %NL%%NOTIFY-GOLD%
+ItemDisplay[jew UNI !ID]: %NL%+    %NAME%    +%NL%%NOTIFY-GOLD%
 ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 
 // =============================================================
@@ -84,9 +84,9 @@ ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 // - Unid Set rings
 // - Unid rare amulets/rings/arrows <ilvl74
 // =============================================================
-ItemDisplay[amu SET !ID]: %NL%      %NAME%      %NL%%NOTIFY-GREEN%
-ItemDisplay[amu OR rin (UNI !ID)]: %NL%    %RED%o %GOLD%%NAME% %RED%o    %NL%%NOTIFY-GOLD%
-ItemDisplay[amu OR rin OR aqv OR aq2 (!ID RARE AND ILVL>74)]: %RED%o %YELLOW%%NAME% [i%ILVL%] %RED%o
+ItemDisplay[amu SET !ID]: %NL% +     %NAME%     + %NL%%NOTIFY-GREEN%
+ItemDisplay[amu OR rin (UNI !ID)]: %NL% +    %NAME%    + %NL%%NOTIFY-GOLD%
+ItemDisplay[amu OR rin OR aqv OR aq2 (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +
 ItemDisplay[(amu OR rin OR aq2 OR cq2 OR aqv OR cqv) (NMAG OR MAG OR RARE) !ID]:
 ItemDisplay[rin SET !ID]:
 
@@ -103,25 +103,25 @@ ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: Throw%ORANGE% ($%PRICE%)
 
 // UNIQUE
 // titans, tstroke, windforce
-ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // death cleaver, executioners justice, bartucs
-ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // gull, wizspike, fleshripper
-ItemDisplay[UNI (dgr OR 7dg OR 7kr) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (dgr OR 7dg OR 7kr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
-ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // reaper's toll, tomb reaver, astreons
-ItemDisplay[UNI (7s8 OR 7pa OR 7ws) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7s8 OR 7pa OR 7ws) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // ondals, mang song, azurewrath, lightsabre
-ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // grandfather, warshrike, lacerator
-ItemDisplay[UNI (7gd OR 7bk OR 7b8) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7gd OR 7bk OR 7b8) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // boneshade, deaths web
-ItemDisplay[UNI (7bw OR 7gw) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7bw OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
 // SET
 // bk tribal guardian, nats wep, tals wep
-ItemDisplay[SET (7wd OR 7qr OR oba) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GREEN%
+ItemDisplay[SET (7wd OR 7qr OR oba) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 4os GMB+3 skill
@@ -146,29 +146,29 @@ ItemDisplay[WEAPON NMAG !RW]:
 
 // UNIQUE
 // arreats, jalal's, ravenlore, spirit keeper, kiras, griffs
-ItemDisplay[UNI (baa OR dra OR dre OR drd OR ci2 OR ci3) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (baa OR dra OR dre OR drd OR ci2 OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // tgods, arach, dungo
-ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // vmagi, shaft, skullders, que-hegan
-ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // arkaines, leviathan, gbane, tyrael
-ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // waterwalks, silks, war trav, gore, treks, marrows, sdancer
-ItemDisplay[UNI (xvb OR xmb OR xtb OR xhb OR uvb OR umb OR uhb) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (xvb OR xmb OR xtb OR xhb OR uvb OR umb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // chance, dracs, steelrends
-ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
-ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // all elite helmets
-ItemDisplay[UNI ELT EQ1 !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI ELT EQ1 !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // hoz, stormshield, homunc, darkforce
-ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
 // SET
 // aldurs boots, ik chest, trang gloves, trang helm, trang belt, trang shield
-ItemDisplay[SET (xtb OR uar OR xmg OR uh9 OR utc OR ne9 ) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GREEN%
+ItemDisplay[SET (xtb OR uar OR xmg OR uh9 OR utc OR ne9 ) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 // tals chest, tals helm, tals boots, nats chest
-ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL%  %NAME%  %NL%%NOTIFY-GREEN%
+ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 3os+ superior mage, dusk, archon
@@ -180,8 +180,7 @@ ItemDisplay[NMAG (pab OR paf) SOCK=4 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKET
 
 // RARES >ilvl79
 // pelts, barb helms, gloves, boots, belts, circs
-ItemDisplay[RARE (EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ILVL>79]: %NAME% [i%ILVL%]
-
+ItemDisplay[RARE (EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ILVL>79 !ID]: %NAME% [i%ILVL%]
 
 // hide all else
 ItemDisplay[ARMOR (MAG OR RARE OR UNI OR SET) !ID]:
