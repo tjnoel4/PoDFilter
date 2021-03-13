@@ -1,3 +1,9 @@
+## v0.1.2b
+3/13/2021
+
+- remove notification from rare arrows
+- enlarge flawless skull box
+
 ## v0.1.2
 3/12/2021
 

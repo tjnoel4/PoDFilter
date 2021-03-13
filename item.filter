@@ -31,7 +31,7 @@ ItemDisplay[rvl]: Full
 //
 // Hidden: All except flawless skull and all Perfects
 // =============================================================
-ItemDisplay[skl OR skz]: %TAN%%NAME%
+ItemDisplay[skl OR skz]: %NL% %TAN%%NAME% %NL%
 ItemDisplay[GEMLEVEL=1 OR GEMLEVEL=2 OR GEMLEVEL=3 OR GEMLEVEL=4]:
 
 // =============================================================
@@ -85,7 +85,8 @@ ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 // =============================================================
 ItemDisplay[amu SET !ID]: %NL% +     %NAME%     + %NL%%NOTIFY-GREEN%
 ItemDisplay[amu OR rin (UNI !ID)]: %NL% +    %NAME%    + %NL%%NOTIFY-GOLD%
-ItemDisplay[amu OR rin OR aqv OR aq2 (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +%NOTIFY-YELLOW%
+ItemDisplay[amu OR rin (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +%NOTIFY-YELLOW%
+ItemDisplay[aqv OR aq2 (!ID RARE AND ILVL>74)]: %NAME% [i%ILVL%]
 ItemDisplay[(amu OR rin OR aq2 OR cq2 OR aqv OR cqv) (NMAG OR MAG OR RARE) !ID]:
 ItemDisplay[(aq2 OR cq2 OR aqv OR cqv) UNI !ID]:
 ItemDisplay[rin SET !ID]:
