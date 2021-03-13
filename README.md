@@ -1,6 +1,7 @@
 # Synpoo's Ultra Strict PoD Filter
 Written because I was getting tired of seeing things like Cleglaw's notified in my chat.  
-Discord: synpoo#7377
+Discord: synpoo#7377  
+[https://twitch.tv/synpoo](https://twitch.tv/synpoo)
 
 ## Features
 - Enlarged item frames to reduce misclicks
