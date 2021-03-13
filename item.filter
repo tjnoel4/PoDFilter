@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.11
-// Last updated: March 11 2021
+// v0.1.2
+// Last updated: March 12 2021
 // reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -10,15 +10,14 @@
 //
 // =============================================================================================
 
-
-
+ItemDisplay[cod SUP]: %NAME%
 
 // =============================================================
 // BASIC ITEMS
 //
 // Hidden: All potions except supers and full rejuv, keys, scrolls
 // =============================================================
-ItemDisplay[GOLD<5000]:
+ItemDisplay[GOLD<6000]:
 ItemDisplay[leg]: %NAME%
 ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR rvs]:
 ItemDisplay[gps OR ops OR gpm OR opm OR gpl OR opl]:
@@ -86,8 +85,9 @@ ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 // =============================================================
 ItemDisplay[amu SET !ID]: %NL% +     %NAME%     + %NL%%NOTIFY-GREEN%
 ItemDisplay[amu OR rin (UNI !ID)]: %NL% +    %NAME%    + %NL%%NOTIFY-GOLD%
-ItemDisplay[amu OR rin OR aqv OR aq2 (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +
+ItemDisplay[amu OR rin OR aqv OR aq2 (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +%NOTIFY-YELLOW%
 ItemDisplay[(amu OR rin OR aq2 OR cq2 OR aqv OR cqv) (NMAG OR MAG OR RARE) !ID]:
+ItemDisplay[(aq2 OR cq2 OR aqv OR cqv) UNI !ID]:
 ItemDisplay[rin SET !ID]:
 
 // =============================================================
@@ -106,8 +106,8 @@ ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: Throw%ORANGE% ($%PRICE%)
 ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // death cleaver, executioners justice, bartucs
 ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// gull, wizspike, fleshripper
-ItemDisplay[UNI (dgr OR 7dg OR 7kr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// gull, fleshripper
+ItemDisplay[UNI (dgr OR 7kr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
 ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // reaper's toll, tomb reaver, astreons
@@ -125,15 +125,15 @@ ItemDisplay[SET (7wd OR 7qr OR oba) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 4os GMB+3 skill
-ItemDisplay[amc NMAG SOCK=4 TABSK0=3]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[amc NMAG SOCK=4 TABSK0=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 4os+ eth thresher/giant thresher/cryptic axe/mancatcher
-ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
-// 5os+ phase blade, zerker
-ItemDisplay[(7cr OR 7wa) NMAG SOCK>4]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
-// 5os+ eth zerker, col blade, col sword
-ItemDisplay[(7wa OR 7gd OR 7fb) NMAG SOCK>4 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+// 5os+  superior zerker
+ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
+// 5os+ eth superior zerker, col blade, col sword
+ItemDisplay[(7wa OR 7gd OR 7fb) SUP SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 3os gtalon +2-3 light sentry
-ItemDisplay[9tw NMAG SOCK=3 SK271>1]: %NL%  %DARK_GREEN%%NAME% %RED%+Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[9tw NMAG SOCK=3 SK271>1 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
 ItemDisplay[WEAPON (MAG OR RARE OR UNI OR SET) !ID]:
@@ -153,8 +153,8 @@ ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // arkaines, leviathan, gbane, tyrael
 ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// waterwalks, silks, war trav, gore, treks, marrows, sdancer
-ItemDisplay[UNI (xvb OR xmb OR xtb OR xhb OR uvb OR umb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// silks, war trav, gore, treks, sdancer
+ItemDisplay[UNI (xmb OR xtb OR xhb OR uvb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // chance, dracs, steelrends
 ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
@@ -172,15 +172,15 @@ ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GRE
 
 // RUNEWORD BASES
 // 3os+ superior mage, dusk, archon
-ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 !ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 3os+ eth elite armors (treachery, stone, duress)
-ItemDisplay[NMAG ELT EQ2 SOCK>2 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+ItemDisplay[SUP ELT EQ2 SOCK>2 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 // 4os eth sacred targe, vortex shield (exile)
-ItemDisplay[NMAG (pab OR paf) SOCK=4 ETH]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+ItemDisplay[SUP (pab OR paf) SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 
 // RARES >ilvl79
-// pelts, barb helms, gloves, boots, belts, circs
-ItemDisplay[RARE (EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ILVL>79 !ID]: %NAME% [i%ILVL%]
+// pelts, gloves, boots, circs
+ItemDisplay[RARE (EQ4 OR EQ5 OR EQ7 OR CL1) ILVL>79 !ID]: %NAME% [i%ILVL%]
 
 // hide all else
 ItemDisplay[ARMOR (MAG OR RARE OR UNI OR SET) !ID]:
