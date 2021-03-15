@@ -1,4 +1,13 @@
+## v0.1.4
+3/15/2021
+
+- fix gheed's notifying as magic in chat
+- hide sandstorm trek
+- hide giant skull
+- hide boneshade
+
 ## v0.1.3b
+3/14/2021
 
 - hide BK sword
 

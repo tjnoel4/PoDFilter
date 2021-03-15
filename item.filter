@@ -1,9 +1,9 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.3b
-// Last updated: March 14 2021
-// reach me at discord: synpoo#7377
+// v0.1.4b
+// Last updated: March 15 2021
+// Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
 // Do not use if you are a new player
@@ -66,8 +66,8 @@ ItemDisplay[RUNE>19 AND RUNE<26]: %NL% +  %NAME%  + %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
-ItemDisplay[cm1 OR cm3 (!ID AND ILVL>50)]: %NL%  %NAME% [i%ILVL%]  %NL%%NOTIFY-BLUE%
 ItemDisplay[cm1 OR cm2 OR cm3 (!ID UNI)]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[cm1 OR cm3 (!ID AND ILVL>50)]: %NL%  %NAME% [i%ILVL%]  %NL%%NOTIFY-BLUE%
 ItemDisplay[(cm1 OR cm2 OR cm3) !ID]:
 
 // Hidden: Unid Jewels <ilvl 45
@@ -107,16 +107,14 @@ ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: Throw%ORANGE% ($%PRICE%)
 ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // death cleaver, executioners justice, bartucs
 ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// gull, fleshripper
-ItemDisplay[UNI (dgr OR 7kr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// gull, fleshripper, death's web
+ItemDisplay[UNI (dgr OR 7kr OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
 ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // reaper's toll, tomb reaver, grandfather
 ItemDisplay[UNI (7s8 OR 7pa OR 7gd) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // ondals, mang song, azurewrath, lightsabre
 ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// boneshade, deaths web
-ItemDisplay[UNI (7bw OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
 // SET
 // nats wep, tals wep
@@ -131,7 +129,7 @@ ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH !RW]: %NL%  %DARK_GREEN%%
 ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 5os+ eth superior zerker, col blade, col sword
 ItemDisplay[(7wa OR 7gd OR 7fb) SUP SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
-// 3os gtalon +2-3 light sentry
+// 3os gtalon +3 light sentry
 ItemDisplay[9tw NMAG SOCK=3 SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
@@ -152,14 +150,14 @@ ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // arkaines, leviathan, gbane, tyrael
 ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// silks, war trav, gore, treks, sdancer
-ItemDisplay[UNI (xmb OR xtb OR xhb OR uvb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// silks, war trav, gore, sdancer
+ItemDisplay[UNI (xmb OR xtb OR xhb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // chance, dracs, steelrends
 ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
 ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// HIDE cerebus bite, demonhorn edge, halaberd
-ItemDisplay[UNI (drb OR bad OR bae) !ID]:
+// HIDE=>> cerebus bite, demonhorn edge, halaberd, giant skull
+ItemDisplay[UNI (drb OR bad OR bae OR uh9) !ID]:
 // all other elite helmets
 ItemDisplay[UNI ELT EQ1 !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // hoz, stormshield, homunc, darkforce
