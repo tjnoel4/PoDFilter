@@ -2,20 +2,23 @@
 Written because I was getting tired of seeing things like Cleglaw's notified in my chat.  
 Discord: synpoo#7377  
 [https://twitch.tv/synpoo](https://twitch.tv/synpoo)
-
+---
 ## Features
 - Enlarged item frames to reduce misclicks
 - Follows original D2 coloring (few accents here and there)
 - Chat notifications
-- Minimap icons (once supported by PoD team)
 - Hides all garbage tier sets and uniques (see below for more info on what gets shown)
 - Hides gold piles <6k, all potions other than highest tier HP/MP/Full rejuv
 - Displays iLvl of unid charms and jewels
-- Shows number of sockets/skill levels on runeword bases
+- Shows number of sockets/skill levels on runeword bases  
+
+## In-Progress Features
+- Sound notifications
+- Minimap icons (once supported)
 
 ![1](https://user-images.githubusercontent.com/80501583/110892700-6590bb80-82a9-11eb-8e30-565431cc19c0.jpg)
 ![2](https://user-images.githubusercontent.com/80501583/110892718-6cb7c980-82a9-11eb-9835-e5b81b707370.png)
-![3](https://user-images.githubusercontent.com/80501583/110892723-6d506000-82a9-11eb-9fbe-69c4834dfa3e.jpg)
+![3](https://user-images.githubusercontent.com/80501583/110892723-6d506000-82a9-11eb-9fbe-69c4834dfa3e.jpg)  
 
 ## Full list of SHOWN items
 **anything NOT listed here is hidden (WHILE UNIDENTIFIED)**
