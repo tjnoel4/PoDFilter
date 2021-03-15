@@ -59,11 +59,9 @@ Discord: synpoo#7377
 - Azurewrath
 - Lightsabre
 - Grandfather
-- Boneshade
 - Death's Web
 
 *weapons - set*
-- BK Tribal Guardian
 - Nat's Claw
 - Tal's Wep
 
@@ -79,7 +77,6 @@ Discord: synpoo#7377
 - Jalal's
 - Ravenlore
 - Spirit Keeper
-- Kira's
 - Griffon's
 - Thundergods
 - Arachnid Mesh
@@ -95,7 +92,6 @@ Discord: synpoo#7377
 - Silkweave
 - War Trav
 - Gorefoot
-- Sandstorm Treks
 - Shadow Dancer
 - Chance Guards
 - Dracs
@@ -113,7 +109,6 @@ Discord: synpoo#7377
 - Nightwing's Veil
 - Andariel's Visage
 - Crown of Ages
-- Giant Skull
 
 *armor - set*
 - Aldur's Boots
@@ -134,7 +129,6 @@ Discord: synpoo#7377
 
 *armor - rares above ilvl79*
 - Druid helms
-- Barb helms
 - Gloves
 - Boots
 - Belts
