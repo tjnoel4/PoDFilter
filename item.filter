@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.2b
-// Last updated: March 12 2021
+// v0.1.3
+// Last updated: March 14 2021
 // reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -111,12 +111,10 @@ ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (dgr OR 7kr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
 ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// reaper's toll, tomb reaver, astreons
-ItemDisplay[UNI (7s8 OR 7pa OR 7ws) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// reaper's toll, tomb reaver, grandfather
+ItemDisplay[UNI (7s8 OR 7pa OR 7gd) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // ondals, mang song, azurewrath, lightsabre
 ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// grandfather, warshrike, lacerator
-ItemDisplay[UNI (7gd OR 7bk OR 7b8) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // boneshade, deaths web
 ItemDisplay[UNI (7bw OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
@@ -134,7 +132,7 @@ ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%
 // 5os+ eth superior zerker, col blade, col sword
 ItemDisplay[(7wa OR 7gd OR 7fb) SUP SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 3os gtalon +2-3 light sentry
-ItemDisplay[9tw NMAG SOCK=3 SK271>1 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[9tw NMAG SOCK=3 SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
 ItemDisplay[WEAPON (MAG OR RARE OR UNI OR SET) !ID]:
@@ -160,7 +158,9 @@ ItemDisplay[UNI (xmb OR xtb OR xhb OR uvb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOT
 ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
 ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// all elite helmets
+// HIDE cerebus bite, demonhorn edge, halaberd
+ItemDisplay[UNI (drb OR bad OR bae) !ID]:
+// all other elite helmets
 ItemDisplay[UNI ELT EQ1 !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // hoz, stormshield, homunc, darkforce
 ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%

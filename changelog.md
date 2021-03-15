@@ -1,3 +1,14 @@
+## v0.1.3
+3/14/2021
+
+- show only 3os +3 light sentry claw (previously showed +2)
+- hide astreon's
+- hide warshrike
+- hide lacerator
+- hide cerebus
+- hide demonhorn
+- hide halaberd
+
 ## v0.1.2b
 3/13/2021
 
