@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.3
+// v0.1.3b
 // Last updated: March 14 2021
 // reach me at discord: synpoo#7377
 //
@@ -119,8 +119,8 @@ ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (7bw OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
 // SET
-// bk tribal guardian, nats wep, tals wep
-ItemDisplay[SET (7wd OR 7qr OR oba) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
+// nats wep, tals wep
+ItemDisplay[SET (7qr OR oba) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 4os GMB+3 skill
