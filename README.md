@@ -51,14 +51,11 @@ Discord: synpoo#7377
 - Fathom
 - Reaper's Toll
 - Tomb Reaver
-- Astreon
 - Ondals
 - Mang Song
 - Azurewrath
 - Lightsabre
 - Grandfather
-- Warshrike
-- Lacerator
 - Boneshade
 - Death's Web
 
