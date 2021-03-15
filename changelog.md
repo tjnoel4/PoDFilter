@@ -5,6 +5,7 @@
 - hide sandstorm trek
 - hide giant skull
 - hide boneshade
+- hide kira
 
 ## v0.1.3b
 3/14/2021

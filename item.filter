@@ -142,8 +142,8 @@ ItemDisplay[WEAPON NMAG !RW]:
 // =============================================================
 
 // UNIQUE
-// arreats, jalal's, ravenlore, spirit keeper, kiras, griffs
-ItemDisplay[UNI (baa OR dra OR dre OR drd OR ci2 OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// arreats, jalal's, ravenlore, spirit keeper, griffs
+ItemDisplay[UNI (baa OR dra OR dre OR drd OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // tgods, arach, dungo
 ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // vmagi, shaft, skullders, que-hegan
