@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.4b
+// v0.1.4c
 // Last updated: March 15 2021
 // Reach me at discord: synpoo#7377
 //
@@ -150,8 +150,8 @@ ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // arkaines, leviathan, gbane, tyrael
 ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// silks, war trav, gore, sdancer
-ItemDisplay[UNI (xmb OR xtb OR xhb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// silks, war trav, sdancer
+ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // chance, dracs, steelrends
 ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
