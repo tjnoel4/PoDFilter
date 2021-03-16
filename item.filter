@@ -111,8 +111,8 @@ ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (dgr OR 7kr OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
 ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// reaper's toll, tomb reaver, grandfather
-ItemDisplay[UNI (7s8 OR 7pa OR 7gd) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// reaper's toll, grandfather
+ItemDisplay[UNI (7s8 OR 7gd) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // ondals, mang song, azurewrath, lightsabre
 ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
