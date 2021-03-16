@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.4c
+// v0.1.4d
 // Last updated: March 15 2021
 // Reach me at discord: synpoo#7377
 //
@@ -142,14 +142,14 @@ ItemDisplay[WEAPON NMAG !RW]:
 // =============================================================
 
 // UNIQUE
-// arreats, jalal's, ravenlore, spirit keeper, griffs
-ItemDisplay[UNI (baa OR dra OR dre OR drd OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// arreats, jalal's, ravenlore, griffs
+ItemDisplay[UNI (baa OR dra OR dre OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // tgods, arach, dungo
 ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // vmagi, shaft, skullders, que-hegan
 ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// arkaines, leviathan, gbane, tyrael
-ItemDisplay[UNI (upl OR uld OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// arkaines, gbane, tyrael
+ItemDisplay[UNI (upl OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // silks, war trav, sdancer
 ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // chance, dracs, steelrends

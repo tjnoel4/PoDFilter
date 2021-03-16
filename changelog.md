@@ -1,3 +1,9 @@
+## v0.1.4d
+3/15/2021
+
+- hide leviathan
+- hide spirit keeper
+
 ## v0.1.4c
 3/15/2021
 
