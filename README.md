@@ -75,7 +75,6 @@ Discord: synpoo#7377
 - Arreat's
 - Jalal's
 - Ravenlore
-- Spirit Keeper
 - Griffon's
 - Thundergods
 - Arachnid Mesh
@@ -85,7 +84,6 @@ Discord: synpoo#7377
 - Skullder's
 - Que-hegan
 - Arkaine's Valor
-- Leviathan
 - Gladiator's Bane
 - Tyrael's Might
 - Silkweave
