@@ -90,7 +90,6 @@ Discord: synpoo#7377
 - Tyrael's Might
 - Silkweave
 - War Trav
-- Gorefoot
 - Shadow Dancer
 - Chance Guards
 - Dracs
@@ -104,7 +103,6 @@ Discord: synpoo#7377
 - Darkforce
 - Shako
 - Steel Shade
-- Veil of Steel
 - Nightwing's Veil
 - Andariel's Visage
 - Crown of Ages
