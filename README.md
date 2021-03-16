@@ -1,5 +1,5 @@
 # Synpoo's Ultra Strict PoD Filter
-Written because I was getting tired of seeing things like Cleglaw's notified in my chat.  
+Written because I was getting tired of Cleglaw's getting notified in chat.  
 Discord: synpoo#7377  
 [https://twitch.tv/synpoo](https://twitch.tv/synpoo)
 ---
@@ -53,7 +53,6 @@ Discord: synpoo#7377
 - Eschuta's
 - Fathom
 - Reaper's Toll
-- Tomb Reaver
 - Ondals
 - Mang Song
 - Azurewrath
