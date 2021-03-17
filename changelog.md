@@ -1,3 +1,8 @@
+## v0.1.6
+3/17/2021
+
+- remove notifications for some unique helmets that were showing
+
 ## v0.1.5b
 3/16/2021
 

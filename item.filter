@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.5b
-// Last updated: March 16 2021
+// v0.1.6
+// Last updated: March 17 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -157,10 +157,13 @@ ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
 ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// HIDE=>> cerebus bite, demonhorn edge, halaberd, giant skull
-ItemDisplay[UNI (drb OR bad OR bae OR uh9) !ID]:
-// all other elite helmets
-ItemDisplay[UNI ELT EQ1 !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// arreats, jalal, ravenlore
+ItemDisplay[UNI (baa OR dra OR dre) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// shako, steelshade, nightwings veil
+ItemDisplay[UNI (uap OR ulm OR uhm) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// andys, coa
+ItemDisplay[UNI (usk OR urn) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+
 // hoz, stormshield, homunc, darkforce
 ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 
