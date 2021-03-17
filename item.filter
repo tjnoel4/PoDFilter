@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.4d
-// Last updated: March 15 2021
+// v0.1.5b
+// Last updated: March 16 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -59,10 +59,11 @@ ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10
 // =============================================================
 // RUNES, JEWELS, CHARMS
 //
-// Hidden: Runes below Lem
+// Hidden: Runes below Lem (Ko shows for unique armor upgrade recipe)
 // =============================================================
-ItemDisplay[RUNE>25]: %NL% +       %NAME%       + %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE>25]: %NL% ++      %NAME%      ++ %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>19 AND RUNE<26]: %NL% +  %NAME%  + %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE=18]: %NL% + %NAME% + %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
@@ -129,8 +130,8 @@ ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH !RW]: %NL%  %DARK_GREEN%%
 ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 5os+ eth superior zerker, col blade, col sword
 ItemDisplay[(7wa OR 7gd OR 7fb) SUP SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
-// 3os gtalon +3 light sentry
-ItemDisplay[9tw NMAG SOCK=3 SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
+// 3os elite sin claw +3 light sentry
+ItemDisplay[!NORM CL5 NMAG SOCK=3 SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
 ItemDisplay[WEAPON (MAG OR RARE OR UNI OR SET) !ID]:
@@ -170,12 +171,12 @@ ItemDisplay[SET (xtb OR uar OR xmg OR uh9 OR utc OR ne9 ) !ID]: %NL% + %NAME% + 
 ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
-// 3os+ superior mage, dusk, archon
-ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
-// 3os+ eth elite armors (treachery, stone, duress)
-ItemDisplay[SUP ELT EQ2 SOCK>2 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
-// 4os eth sacred targe, vortex shield (exile)
-ItemDisplay[SUP (pab OR paf) SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+// 3os+ superior 15ed mage, dusk, archon
+ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 ED=15 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
+// 3os+ 15ed eth elite armors (treachery, stone, duress)
+ItemDisplay[SUP ELT EQ2 SOCK>2 ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+// 4os 15ed eth sacred targe, vortex shield (exile)
+ItemDisplay[SUP (pab OR paf) SOCK=4 ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 
 // RARES >ilvl79
 // pelts, gloves, boots, circs

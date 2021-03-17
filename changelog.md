@@ -1,3 +1,14 @@
+## v0.1.5b
+3/16/2021
+
+- show ko for unique armor upgrade recipe
+
+## v0.1.5
+3/16/2021
+
+- only show 15%ed armor runeword bases
+- show any elite sin claw that is 3os +3 light sentry
+
 ## v0.1.4d
 3/15/2021
 
