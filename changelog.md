@@ -1,3 +1,15 @@
+## v0.1.7b
+3/18/2021
+
+- hide chance guard
+
+## v0.1.7
+3/18/2021
+
+- show 4os -10req monarchs
+- show only 4os polearm/spear type bases
+- hide cryptic axe base
+
 ## v0.1.6
 3/17/2021
 

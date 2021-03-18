@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.6
-// Last updated: March 17 2021
+// v0.1.7b
+// Last updated: March 18 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -124,8 +124,8 @@ ItemDisplay[SET (7qr OR oba) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 // RUNEWORD BASES
 // 4os GMB+3 skill
 ItemDisplay[amc NMAG SOCK=4 TABSK0=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
-// 4os+ eth thresher/giant thresher/cryptic axe/mancatcher
-ItemDisplay[(7s8 OR 7wc OR 7pa OR 7br) NMAG SOCK>3 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+// 4os+ eth thresher/giant thresher/mancatcher
+ItemDisplay[(7s8 OR 7wc OR 7br) NMAG SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 5os+  superior zerker
 ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 5os+ eth superior zerker, col blade, col sword
@@ -153,8 +153,8 @@ ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOL
 ItemDisplay[UNI (upl OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // silks, war trav, sdancer
 ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// chance, dracs, steelrends
-ItemDisplay[UNI (mgl OR uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+// dracs, steelrends
+ItemDisplay[UNI (uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // stealskull, valk wing, vampgaze
 ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
 // arreats, jalal, ravenlore
@@ -180,6 +180,8 @@ ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 ED=15 !ETH !RW]: %NL%  %DARK_GREEN%%N
 ItemDisplay[SUP ELT EQ2 SOCK>2 ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 // 4os 15ed eth sacred targe, vortex shield (exile)
 ItemDisplay[SUP (pab OR paf) SOCK=4 ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
+// 4os -10req monarch
+ItemDisplay[SUP uit SOCK=4 ITEMSTAT91=-10 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% -10%req %RED%%SOCKETS%os [ETH]  %NL%%NOTIFY-GRAY%
 
 // RARES >ilvl79
 // pelts, gloves, boots, circs
