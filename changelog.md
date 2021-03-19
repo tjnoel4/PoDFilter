@@ -1,3 +1,9 @@
+## v0.1.7c
+3/18/2021
+
+- hide natalya's shadow
+- hide tals belt
+
 ## v0.1.7b
 3/18/2021
 

@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.7b
+// v0.1.7c
 // Last updated: March 18 2021
 // Reach me at discord: synpoo#7377
 //
@@ -170,8 +170,8 @@ ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOL
 // SET
 // aldurs boots, ik chest, trang gloves, trang helm, trang belt, trang shield
 ItemDisplay[SET (xtb OR uar OR xmg OR uh9 OR utc OR ne9 ) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
-// tals chest, tals helm, tals boots, nats chest
-ItemDisplay[SET (uth OR xsk OR zmb OR ucl) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
+// tals chest, tals helm
+ItemDisplay[SET (uth OR xsk) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 3os+ superior 15ed mage, dusk, archon
