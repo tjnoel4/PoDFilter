@@ -66,7 +66,7 @@ Discord: synpoo#7377
 
 *weapons - runeword bases*
 - 4os GMB +3 bow
-- 4os+ eth thresher/giant thresher/cryptic axe/mancatcher
+- 4os eth thresher/giant thresher/mancatcher
 - 5os+ zerker non eth
 - 5os+ eth zerker, col blade, col sword
 - 3os greater talon +2-3 light sentry
@@ -89,7 +89,6 @@ Discord: synpoo#7377
 - Silkweave
 - War Trav
 - Shadow Dancer
-- Chance Guards
 - Dracs
 - Steelrend
 - Stealskull
@@ -114,13 +113,12 @@ Discord: synpoo#7377
 - Trang Shield
 - Tal's Chest
 - Tal's Helm
-- Tal's Boots
-- Nat's Chest
 
 *armor - runeword bases*
 - 3os+ superior mage, dusk, archon
 - 3os+ eth elite armors (treachery, stone, duress)
 - 4os eth sacred targe, vortex shield (exile)
+- 4os -10req monarch
 
 *armor - rares above ilvl79*
 - Druid helms
