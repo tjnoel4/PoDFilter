@@ -1,3 +1,9 @@
+## v0.1.8
+3/19/2021
+
+- increased visibility of certain drops (mostly hr+, added more visual flair)
+- hide stealskull, valk wing
+
 ## v0.1.7c
 3/18/2021
 

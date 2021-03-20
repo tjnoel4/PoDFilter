@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.7c
-// Last updated: March 18 2021
+// v0.1.8
+// Last updated: March 19 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -61,9 +61,9 @@ ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10
 //
 // Hidden: Runes below Lem (Ko shows for unique armor upgrade recipe)
 // =============================================================
-ItemDisplay[RUNE>25]: %NL% ++      %NAME%      ++ %NL%%NOTIFY-ORANGE%
-ItemDisplay[RUNE>19 AND RUNE<26]: %NL% +  %NAME%  + %NL%%NOTIFY-ORANGE%
-ItemDisplay[RUNE=18]: %NL% + %NAME% + %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE>25]: %NL% %PURPLE%OOO      %ORANGE%%NAME%      %PURPLE%OOO %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE>19 AND RUNE<26]: %NL% %PURPLE%OO  %ORANGE%%NAME%  %PURPLE%OO %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE=18]: %NL% * %NAME% * %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
@@ -74,7 +74,7 @@ ItemDisplay[(cm1 OR cm2 OR cm3) !ID]:
 // Hidden: Unid Jewels <ilvl 45
 ItemDisplay[jew MAG !ID]: %NAME% [i%ILVL%]
 ItemDisplay[jew RARE !ID]: %NL%  %NAME% [i%ILVL%]  %NL%%NOTIFY-YELLOW%
-ItemDisplay[jew UNI !ID]: %NL%+    %NAME%    +%NL%%NOTIFY-GOLD%
+ItemDisplay[jew UNI !ID]: %NL%O    %NAME%    O%NL%%NOTIFY-GOLD%
 ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 
 // =============================================================
@@ -84,8 +84,8 @@ ItemDisplay[jew MAG OR RARE (!ID AND ILVL<45)]:
 // - Unid Set rings
 // - Unid rare amulets/rings/arrows <ilvl74
 // =============================================================
-ItemDisplay[amu SET !ID]: %NL% +     %NAME%     + %NL%%NOTIFY-GREEN%
-ItemDisplay[amu OR rin (UNI !ID)]: %NL% +    %NAME%    + %NL%%NOTIFY-GOLD%
+ItemDisplay[amu SET !ID]: %NL% O     %NAME%     O %NL%%NOTIFY-GREEN%
+ItemDisplay[amu OR rin (UNI !ID)]: %NL% %PURPLE%OO    %GOLD%%NAME%    %PURPLE%OO %NL%%NOTIFY-GOLD%
 ItemDisplay[amu OR rin (!ID RARE AND ILVL>74)]: + %NAME% [i%ILVL%] +%NOTIFY-YELLOW%
 ItemDisplay[aqv OR aq2 (!ID RARE AND ILVL>74)]: %NAME% [i%ILVL%]
 ItemDisplay[(amu OR rin OR aq2 OR cq2 OR aqv OR cqv) (NMAG OR MAG OR RARE) !ID]:
@@ -105,17 +105,17 @@ ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: Throw%ORANGE% ($%PRICE%)
 
 // UNIQUE
 // titans, tstroke, windforce
-ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (ama OR amf OR 6lw) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // death cleaver, executioners justice, bartucs
-ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // gull, fleshripper, death's web
-ItemDisplay[UNI (dgr OR 7kr OR 7gw) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (dgr OR 7kr OR 7gw) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // occy, eschutas, fathom
-ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (oba OR obc OR obf) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // reaper's toll, grandfather
-ItemDisplay[UNI (7s8 OR 7gd) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (7s8 OR 7gd) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // ondals, mang song, azurewrath, lightsabre
-ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (6cs OR 6ws OR 7cr) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 
 // SET
 // nats wep, tals wep
@@ -144,28 +144,26 @@ ItemDisplay[WEAPON NMAG !RW]:
 
 // UNIQUE
 // arreats, jalal's, ravenlore, griffs
-ItemDisplay[UNI (baa OR dra OR dre OR ci3) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// tgods, arach, dungo
-ItemDisplay[UNI (zhb OR ulc OR umc) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (baa OR dra OR dre OR ci3) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
+// arach, tyrael
+ItemDisplay[UNI (ulc OR uar) !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
+// tgods, dungo
+ItemDisplay[UNI (zhb OR umc) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // vmagi, shaft, skullders, que-hegan
-ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// arkaines, gbane, tyrael
-ItemDisplay[UNI (upl OR utu OR uar) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (xea OR xhn OR xpl OR xtp) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
+// arkaines, gbane
+ItemDisplay[UNI (upl OR utu) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // silks, war trav, sdancer
-ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (xmb OR xtb OR uhb) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // dracs, steelrends
-ItemDisplay[UNI (uvg OR uhg) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// stealskull, valk wing, vampgaze
-ItemDisplay[UNI (xlm OR xhm OR xh9) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// arreats, jalal, ravenlore
-ItemDisplay[UNI (baa OR dra OR dre) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (uvg OR uhg) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // shako, steelshade, nightwings veil
-ItemDisplay[UNI (uap OR ulm OR uhm) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
-// andys, coa
-ItemDisplay[UNI (usk OR urn) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (uap OR ulm OR uhm) !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
+// andys, coa, gaze
+ItemDisplay[UNI (usk OR urn OR xh9) !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
 
 // hoz, stormshield, homunc, darkforce
-ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% + %NAME% + %NL%%NOTIFY-GOLD%
+ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 
 // SET
 // aldurs boots, ik chest, trang gloves, trang helm, trang belt, trang shield
