@@ -8,7 +8,7 @@ Discord: synpoo#7377
 - Follows original D2 coloring (few accents here and there)
 - Chat notifications
 - Hides all garbage tier sets and uniques (see below for more info on what gets shown)
-- Hides gold piles <6k, all potions other than highest tier HP/MP/Full rejuv
+- Hides gold piles below 30k, all potions other than highest tier HP/MP/Full rejuv
 - Displays iLvl of unid charms and jewels
 - Shows number of sockets/skill levels on runeword bases  
 
@@ -24,7 +24,7 @@ Discord: synpoo#7377
 **anything NOT listed here is hidden (WHILE UNIDENTIFIED)**
 
 *misc*
-- Gold above 6k
+- Gold above 30k
 - Throwing Knives/Wands for 35k
 - Wirt's Leg
 - Horadric Cube
@@ -42,27 +42,23 @@ Discord: synpoo#7377
 
 *weapons - uniques*
 - Titan's Revenge
-- Thunderstroke
 - Windforce
 - Death Cleaver
 - Executioner's Justice
 - Bartuc's
-- Gull
 - Fleshripper
 - Oculus
 - Eschuta's
 - Fathom
 - Reaper's Toll
 - Ondals
-- Mang Song
 - Azurewrath
 - Lightsabre
 - Grandfather
-- Death's Web
+- Death's Web  
 
 *weapons - set*
-- Nat's Claw
-- Tal's Wep
+- Nat's Claw  
 
 *weapons - runeword bases*
 - 4os GMB +3 bow
@@ -82,7 +78,6 @@ Discord: synpoo#7377
 - Vipermagi
 - Shaftstop
 - Skullder's
-- Que-hegan
 - Arkaine's Valor
 - Gladiator's Bane
 - Tyrael's Might
@@ -91,9 +86,7 @@ Discord: synpoo#7377
 - Shadow Dancer
 - Dracs
 - Steelrend
-- Stealskull
-- Valk Wing
-- Vampyre Gaze
+- Vamp Gaze
 - Herald of Zak
 - Stormshield
 - Homunculus
@@ -102,14 +95,11 @@ Discord: synpoo#7377
 - Steel Shade
 - Nightwing's Veil
 - Andariel's Visage
-- Crown of Ages
 
 *armor - set*
 - Aldur's Boots
 - Immortal King's chest
-- Trang Gloves
 - Trang Helm
-- Trang Belt
 - Trang Shield
 - Tal's Chest
 - Tal's Helm
@@ -124,5 +114,4 @@ Discord: synpoo#7377
 - Druid helms
 - Gloves
 - Boots
-- Belts
-- Circlets
+- Circlets+
