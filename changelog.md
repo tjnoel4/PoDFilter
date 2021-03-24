@@ -1,3 +1,23 @@
+## v0.1.9
+3/24/2021
+
+- hide gold below 30k
+- hide trang belt
+- hide que-hegan
+- hide gull
+- hide thunderstroke
+- hide tals wep
+- hide mang song
+- hide coa
+- hide trang glove
+- only show eth reaper's toll
+- only show 15ed eth polearm/spear bases
+- only show superior +3 4os gmb
+- show 0 socket -10req monarch
+- show +3 wake of inferno 3os elite claw
+- display full rejuvs as purple
+- add non-eth flags to most items
+
 ## v0.1.8
 3/19/2021
 
