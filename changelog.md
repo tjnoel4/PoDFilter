@@ -1,3 +1,9 @@
+## v0.1.9c
+3/25/2021
+
+- show 6os nmag eth war pike
+- show 0 or 6os superior eth war pike with +ed
+
 ## v0.1.9b
 3/24/2021
 

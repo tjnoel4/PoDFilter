@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.9b
+// v0.1.9c
 // Last updated: March 24 2021
 // Reach me at discord: synpoo#7377
 //
@@ -126,8 +126,12 @@ ItemDisplay[SET 7qr !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 // RUNEWORD BASES
 // 4os 10ed+ GMB+3 skill
 ItemDisplay[amc SUP ED>9 SOCK=4 TABSK0=3 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
-// 4os+ 15ed eth thresher/giant thresher/mancatcher
+// 4os 15ed eth thresher/giant thresher/mancatcher
 ItemDisplay[(7s8 OR 7wc OR 7br) SUP ED=15 SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os 15ed ETH  %NL%%NOTIFY-GRAY%
+// 6os normal eth war pike
+ItemDisplay[7p7 NMAG SOCK=6 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+// 0 or 6os superior eth war pike
+ItemDisplay[7p7 SUP (SOCK=0 OR SOCK=6) ED>0 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 5os+ superior zerker
 ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 5os+ eth superior zerker, col blade, col sword
