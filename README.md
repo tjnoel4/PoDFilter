@@ -66,6 +66,8 @@ Discord: synpoo#7377
 - 5os+ zerker non eth
 - 5os+ eth zerker, col blade, col sword
 - 3os greater talon +2-3 light sentry
+- 6os eth war pike
+- 0 or 6os superior eth war pike
 
 *armor - uniques*
 - Arreat's
