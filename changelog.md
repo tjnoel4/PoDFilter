@@ -1,3 +1,8 @@
+## v0.1.9b
+3/24/2021
+
+- show 0 or 4os eth sacred targe/vortex shield with 44/45 all res
+
 ## v0.1.9
 3/24/2021
 

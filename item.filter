@@ -1,7 +1,7 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.9
+// v0.1.9b
 // Last updated: March 24 2021
 // Reach me at discord: synpoo#7377
 //
@@ -181,6 +181,9 @@ ItemDisplay[SET (uth OR xsk) !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 ItemDisplay[SUP (xtp OR uui OR utp) SOCK>2 ED=15 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 3os+ 15ed eth elite armors (treachery, stone, duress)
 ItemDisplay[SUP ELT EQ2 SOCK>2 ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+// 0 socket or 4os 44-45res eth sacred targe, vortex shield
+ItemDisplay[NMAG (pab OR paf) (SOCK=0 OR SOCK=4) RES=44 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %YELLOW%44@res %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
+ItemDisplay[NMAG (pab OR paf) (SOCK=0 OR SOCK=4) RES=45 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %YELLOW%45@res %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 0 socket or 4os 15ed eth sacred targe, vortex shield (exile)
 ItemDisplay[SUP (pab OR paf) (SOCK=0 OR SOCK=4) ED=15 ETH !RW]: %NL%  %DARK_GREEN%%NAME% +15%ed %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 0 socket or 4os -10req monarch
