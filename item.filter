@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.9c
-// Last updated: March 24 2021
+// v0.1.9d
+// Last updated: March 27 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -63,7 +63,7 @@ ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10
 // =============================================================
 ItemDisplay[RUNE>25]: %NL% %PURPLE%OOO      %ORANGE%%NAME%      %PURPLE%OOO %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>19 AND RUNE<26]: %NL% %PURPLE%OO  %ORANGE%%NAME%  %PURPLE%OO %NL%%NOTIFY-ORANGE%
-ItemDisplay[RUNE=18]: %NL% * %NAME% * %NL%%NOTIFY-ORANGE%
+ItemDisplay[RUNE=18]: * %NAME% *%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
@@ -99,13 +99,13 @@ ItemDisplay[rin SET !ID]:
 
 //Vendor items
 //SK88=1 =32453 Gold. SK73=1 =32453 Gold.
-ItemDisplay[WP12 NMAG !ETH (wnd OR ywn OR 9wn) ILVL>49 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %NAME% %ORANGE%($%PRICE%)
-ItemDisplay[WP12 NMAG !ETH SOCK=1 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %NAME% %ORANGE%($%PRICE%)
-ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: Throw%ORANGE% ($%PRICE%)
+ItemDisplay[WP12 NMAG !ETH (wnd OR ywn OR 9wn) ILVL>49 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %ORANGE%$%PRICE%
+ItemDisplay[WP12 NMAG !ETH SOCK=1 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %ORANGE%$%PRICE%
+ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: %ORANGE%$%PRICE%
 
 // UNIQUE
-// titans, windforce
-ItemDisplay[UNI (ama OR 6lw) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
+// titans, tstroke, windforce
+ItemDisplay[UNI (ama OR amf OR 6lw) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // death cleaver, executioners justice, bartucs
 ItemDisplay[UNI (7wa OR 7gi OR 9tw) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // fleshripper, death's web
@@ -116,7 +116,7 @@ ItemDisplay[UNI (oba OR obc OR obf) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURP
 ItemDisplay[UNI 7gd !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // eth reaper's toll
 ItemDisplay[UNI 7s8 ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
-// ondals, azurewrath, lightsabre
+// ondals, azurewrath/lightsabre
 ItemDisplay[UNI (6cs OR 7cr) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 
 // SET
@@ -157,16 +157,12 @@ ItemDisplay[UNI (baa OR dra OR dre) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURP
 ItemDisplay[UNI (ulc OR ci3) !ETH !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
 // tyrael
 ItemDisplay[UNI uar !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
-// tgods, dungo
-ItemDisplay[UNI (zhb OR umc) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // vmagi, shaft, skullders
 ItemDisplay[UNI (xea OR xhn OR xpl) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
-// arkaines, gbane
-ItemDisplay[UNI (upl OR utu) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
-// silks, war trav, sdancer
-ItemDisplay[UNI (xmb OR xtb OR uhb) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
-// dracs, steelrends
-ItemDisplay[UNI (uvg OR uhg) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
+// arkaines, gbane, tgods
+ItemDisplay[UNI (upl OR utu OR zhb) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
+// silks, war trav, dracs
+ItemDisplay[UNI (xmb OR xtb OR uvg) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 // shako, steelshade, nightwings veil
 ItemDisplay[UNI (uap OR ulm OR uhm) !ETH !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %NL%%NOTIFY-GOLD%
 // andys, gaze
@@ -175,10 +171,10 @@ ItemDisplay[UNI (usk OR xh9) !ETH !ID]: %NL% %PURPLE%O %GOLD%%NAME% %PURPLE%O %N
 ItemDisplay[UNI (pa9 OR uit OR nea OR nef) !ETH !ID]: %NL% %PURPLE%+ %GOLD%%NAME% %PURPLE%+ %NL%%NOTIFY-GOLD%
 
 // SET
-// aldurs boots, ik chest, trang helm, trang shield
-ItemDisplay[SET (xtb OR uar OR uh9 OR ne9 ) !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
-// tals chest, tals helm
-ItemDisplay[SET (uth OR xsk) !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
+// aldurs boots, trang helm
+ItemDisplay[SET (xtb OR uh9) !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
+// tals chest
+ItemDisplay[SET uth !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 
 // RUNEWORD BASES
 // 3os+ superior 15ed mage, dusk, archon
@@ -194,8 +190,8 @@ ItemDisplay[SUP (pab OR paf) (SOCK=0 OR SOCK=4) ED=15 ETH !RW]: %NL%  %DARK_GREE
 ItemDisplay[SUP uit (SOCK=0 OR SOCK=4) ITEMSTAT91=-10 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% -10%req %RED%%SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // RARES >ilvl79
-// pelts, gloves, boots, circs
-ItemDisplay[RARE (EQ4 OR EQ5 OR EQ7 OR CL1) ILVL>79 !ETH !ID]: %NAME% [i%ILVL%]
+// gloves, boots, circs
+ItemDisplay[RARE (EQ4 OR EQ5 OR EQ7) ILVL>79 !ETH !ID]: %NAME% [i%ILVL%]
 
 // hide all else
 ItemDisplay[ARMOR (MAG OR RARE OR UNI OR SET) !ID]:

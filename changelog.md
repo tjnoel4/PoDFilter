@@ -1,3 +1,17 @@
+## v0.1.9d
+3/27/2021
+
+- hide tal helm
+- hide ik chest
+- hide trang shield
+- hide shadow dancer
+- hide steelrend
+- hide verdungo
+- hide druid pelts
+- show tstroke
+- only show the price of 35k vendor items instead of the full name
+- remove NL of Ko rune
+
 ## v0.1.9c
 3/25/2021
 
