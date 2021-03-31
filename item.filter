@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.9d
-// Last updated: March 27 2021
+// v0.1.9e
+// Last updated: March 30 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -22,8 +22,8 @@ ItemDisplay[leg]: %NAME%
 ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR rvs]:
 ItemDisplay[gps OR ops OR gpm OR opm OR gpl OR opl]:
 ItemDisplay[key OR vps OR yps OR wms OR tsc OR isc]:
-ItemDisplay[hp5]: Heal
-ItemDisplay[mp5]:	Mana
+ItemDisplay[hp5]: %RED%*%WHITE%Hp
+ItemDisplay[mp5]:	%BLUE%*%WHITE%Mp
 ItemDisplay[rvl]: %PURPLE%Full
 
 // =============================================================
@@ -45,10 +45,10 @@ ItemDisplay[bet]: %GRAY%  Essence%ORANGE% (Diablo)  %NOTIFY-ORANGE%
 ItemDisplay[fed]: %GRAY%  Essence%ORANGE% (Baal)  %NOTIFY-ORANGE%
 
 // Keys and Organs
-ItemDisplay[pk1]: %GRAY%  Key%ORANGE% (Countess)  %NOTIFY-ORANGE%
-ItemDisplay[pk2]: %GRAY%  Key%ORANGE% (Summoner)  %NOTIFY-ORANGE%
-ItemDisplay[pk3]: %GRAY%  Key%ORANGE% (Izual)  %NOTIFY-ORANGE%
-ItemDisplay[dhn OR bey OR mbr]: %ORANGE%  %NAME%  %NOTIFY-ORANGE%
+ItemDisplay[pk1]: %NL% %PURPLE%O  %GRAY%Key%ORANGE% (Countess)  %PURPLE%O %NL%%NOTIFY-ORANGE%
+ItemDisplay[pk2]: %NL% %PURPLE%O  %GRAY%Key%ORANGE% (Summoner)  %PURPLE%O %NL%%NOTIFY-ORANGE%
+ItemDisplay[pk3]: %NL% %PURPLE%O  %GRAY%Key%ORANGE% (Nihlathak)  %PURPLE%O %NL%%NOTIFY-ORANGE%
+ItemDisplay[dhn OR bey OR mbr]: %NL% %PURPLE%**  %ORANGE%%NAME%  %PURPLE%** %NL%%NOTIFY-ORANGE%
 
 // PoD Items
 ItemDisplay[cx5]: %NL% %PURPLE%+ %NAME% + %NL%%NOTIFY-PURPLE%
@@ -67,7 +67,7 @@ ItemDisplay[RUNE=18]: * %NAME% *%NOTIFY-ORANGE%
 ItemDisplay[RUNE>0 AND RUNE<20]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
-ItemDisplay[cm1 OR cm2 OR cm3 (!ID UNI)]: %NL%  %NAME%  %NL%%NOTIFY-GOLD%
+ItemDisplay[cm1 OR cm2 OR cm3 (!ID UNI)]: %NL% %PURPLE%OO  %GOLD%%NAME%  %PURPLE%OO %NL%%NOTIFY-GOLD%
 ItemDisplay[cm1 OR cm3 (!ID AND ILVL>50)]: %NL%  %NAME% [i%ILVL%]  %NL%%NOTIFY-BLUE%
 ItemDisplay[(cm1 OR cm2 OR cm3) !ID]:
 
@@ -127,7 +127,7 @@ ItemDisplay[SET 7qr !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 // 4os 10ed+ GMB+3 skill
 ItemDisplay[amc SUP ED>9 SOCK=4 TABSK0=3 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 4os 15ed eth thresher/giant thresher/mancatcher
-ItemDisplay[(7s8 OR 7wc OR 7br) SUP ED=15 SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os 15ed ETH  %NL%%NOTIFY-GRAY%
+ItemDisplay[(7s8 OR 7wc OR 7br) SUP ED>9 SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os 15ed ETH  %NL%%NOTIFY-GRAY%
 // 6os normal eth war pike
 ItemDisplay[7p7 NMAG SOCK=6 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 0 or 6os superior eth war pike
@@ -137,9 +137,9 @@ ItemDisplay[7wa SUP SOCK>4 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os  %NL%
 // 5os+ eth superior zerker, col blade, col sword
 ItemDisplay[(7wa OR 7gd OR 7fb) SUP SOCK>4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 3os elite sin claw +3 light sentry
-ItemDisplay[!NORM CL5 NMAG SOCK=3 SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[!NORM CL5 NMAG (SOCK=0 OR SOCK=3) SK271=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Sentry %SOCKETS%os  %NL%%NOTIFY-GRAY%
 // 3os elite sin claw +3 wake
-ItemDisplay[!NORM CL5 NMAG SOCK=3 SK262=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Wake %SOCKETS%os  %NL%%NOTIFY-GRAY%
+ItemDisplay[!NORM CL5 NMAG (SOCK=0 OR SOCK=3) SK262=3 !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3 Wake %SOCKETS%os  %NL%%NOTIFY-GRAY%
 
 // hide all else
 ItemDisplay[WEAPON (MAG OR RARE OR UNI OR SET) !ID]:

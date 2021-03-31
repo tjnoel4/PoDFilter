@@ -1,3 +1,12 @@
+## v0.1.9e
+3/30/2021
+
+- shorten and colorize hp/mp
+- properly name nihlathak key
+- enlarge boxes of organs and keys
+- eth 4os thresh/gt/mancatcher now shows above 9ed
+- include 0 socket sin claws for wake/sentry
+
 ## v0.1.9d
 3/27/2021
 
