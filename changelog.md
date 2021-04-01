@@ -1,3 +1,8 @@
+## v0.1.9f
+3/31/2021
+
+- fix name of eth 4os 10+ed polearm/spear bases
+
 ## v0.1.9e
 3/30/2021
 

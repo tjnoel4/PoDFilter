@@ -1,8 +1,8 @@
 // =============================================================================================
 //
 // Synpoo's ultra strict PoD Filter
-// v0.1.9e
-// Last updated: March 30 2021
+// v0.1.9f
+// Last updated: March 31 2021
 // Reach me at discord: synpoo#7377
 //
 // This filter was built for the endgame ONLY and WILL hide majority of items
@@ -126,8 +126,8 @@ ItemDisplay[SET 7qr !ETH !ID]: %NL% + %NAME% + %NL%%NOTIFY-GREEN%
 // RUNEWORD BASES
 // 4os 10ed+ GMB+3 skill
 ItemDisplay[amc SUP ED>9 SOCK=4 TABSK0=3 !ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%+3bow %SOCKETS%os  %NL%%NOTIFY-GRAY%
-// 4os 15ed eth thresher/giant thresher/mancatcher
-ItemDisplay[(7s8 OR 7wc OR 7br) SUP ED>9 SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os 15ed ETH  %NL%%NOTIFY-GRAY%
+// 4os 10+ed eth thresher/giant thresher/mancatcher
+ItemDisplay[(7s8 OR 7wc OR 7br) SUP ED>9 SOCK=4 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os +ED ETH  %NL%%NOTIFY-GRAY%
 // 6os normal eth war pike
 ItemDisplay[7p7 NMAG SOCK=6 ETH !RW]: %NL%  %DARK_GREEN%%NAME% %RED%%SOCKETS%os ETH  %NL%%NOTIFY-GRAY%
 // 0 or 6os superior eth war pike
