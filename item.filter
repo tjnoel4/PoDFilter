@@ -63,8 +63,8 @@ ItemDisplay[(ma1 OR ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10
 // =============================================================
 ItemDisplay[RUNE>25]: %NL% %PURPLE%OOO      %ORANGE%%NAME%      %PURPLE%OOO %NL%%NOTIFY-ORANGE%
 ItemDisplay[RUNE>19 AND RUNE<26]: %NL% %PURPLE%OO  %ORANGE%%NAME%  %PURPLE%OO %NL%%NOTIFY-ORANGE%
-ItemDisplay[RUNE=18]: * %NAME% *%NOTIFY-ORANGE%
-ItemDisplay[RUNE>0 AND RUNE<20]:
+ItemDisplay[RUNE>11]: * %NAME% *%NOTIFY-ORANGE%
+ItemDisplay[RUNE>0 AND RUNE<12]:
 
 // Hidden: Unid Large charms, Grand charms <ilvl50, Small charms <ilvl50
 ItemDisplay[cm1 OR cm2 OR cm3 (!ID UNI)]: %NL% %PURPLE%OO  %GOLD%%NAME%  %PURPLE%OO %NL%%NOTIFY-GOLD%
